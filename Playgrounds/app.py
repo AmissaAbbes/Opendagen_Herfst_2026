@@ -18,7 +18,6 @@ calculus_page = st.Page(
 # Koppel ook je overige pagina's uit je map zodat Streamlit ze indexeert
 deep_learning_page = st.Page("pages/Deep_learning.py", title="Deep Learning", icon="🧠")
 storytelling_page = st.Page("pages/Business_Storytelling.py", title="Business Storytelling", icon="📈")
-tijdsreeksen_page = st.Page("pages/Tijdsreeksen.py", title="Tijdsreeksen", icon="⏳")
 
 
 # 2. DEFINIEER DAARNA PAS DE LAYOUT VAN DE HOMEPAGINA
@@ -51,5 +50,5 @@ def home_page_layout():
 home_page = st.Page(home_page_layout, title="Home", icon="🏠", default=True)
 
 # Start de navigatie engine
-pg = st.navigation([home_page, ml_page, calculus_page, deep_learning_page, storytelling_page, tijdsreeksen_page])
+pg = st.navigation([home_page, ml_page, calculus_page, deep_learning_page, storytelling_page])
 pg.run()
