@@ -47,7 +47,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 st.sidebar.header("📁 Dataset Selectie")
 dataset_source = st.sidebar.selectbox(
     "Kies de actieve dataset-map:",
-    [f"..\Playgrounds\pokemon_small", f"..\Playgrounds\pokemon"]
+    f"..\Playgrounds\pokemon_small"
 )
 
 # Dynamisch de klassen correct scannen uit de geselecteerde map (train of test)
